@@ -63,10 +63,58 @@
             background-color: #0066cc;
             color: white;
         }
+        nav {
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+    }
+        nav a {
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+margin: 0 10px;
+display: inline-block;
+}
+
+nav a:hover {
+background-color: #FF6600;
+border-radius: 5px;
+}
+
+nav .navbar-brand {
+font-weight: bold;
+font-size: 1.5em;
+}
+
+/* Estilos para la barra de navegación responsiva */
+@media (max-width: 768px) {
+nav {
+text-align: center;
+}
+
+nav a {
+display: block;
+margin: 5px 0;
+}
+}
     </style>
 </head>
 <body>
 
+    
+
+  <nav>
+    <div>
+      <a class="navbar-brand" href="../Agile/Agile.html">Proyecto</a>
+      <a href="../Agile/Agile.html">Agile 1</a>
+      <a href="../Agile/Agile2.html">Agile 2</a>
+      <a href="../Agile/Agile3.html">Agile 3</a>
+      <a href="../Docker/docker1.html">Docker 1</a>
+      <a href="../Docker/docker2.html">Docker 2</a>
+      <a href="../Scrum/Scrum1.html">Scrum 1</a>
+      <a href="../Scrum/Scrum2.html">Scrum 2</a>
+    </div>
+  </nav>
 <div class="container">
     <h1>Historias de Usuario</h1>
     <p>Las <strong>historias de usuario</strong> son tareas de desarrollo expresadas en formato “persona + necesidad + propósito”. Una historia de usuario es una explicación informal de una función de software desde la perspectiva del usuario final, articulando cómo la función aportará valor.</p>
