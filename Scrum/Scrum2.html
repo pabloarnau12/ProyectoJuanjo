@@ -1,11 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Historias de Usuario en Scrum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #0066cc;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        .highlight {
+            background-color: #e0f4f1;
+            padding: 10px;
+            border-left: 4px solid #0066cc;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #0066cc;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    Scrum2
+
+<div class="container">
+    <h1>Historias de Usuario</h1>
+    <p>Las <strong>historias de usuario</strong> son tareas de desarrollo expresadas en formato “persona + necesidad + propósito”. Una historia de usuario es una explicación informal de una función de software desde la perspectiva del usuario final, articulando cómo la función aportará valor.</p>
+    
+    <p>En el desarrollo ágil, las historias de usuario son esenciales para centrar al equipo en el usuario final, usando lenguaje no técnico para proporcionar contexto al equipo. Esto ayuda a comprender no solo <em>qué</em> construir, sino también <em>por qué</em> es importante y qué valor aporta al usuario.</p>
+
+    <h2>¿Qué son las historias de usuario ágiles?</h2>
+    <p>Una historia de usuario es la unidad de trabajo más pequeña en un marco ágil, representando un objetivo desde la perspectiva del usuario. No profundiza en aspectos técnicos, lo que permite que todos en el equipo comprendan el valor que aporta.</p>
+    <p>El propósito principal de una historia de usuario es definir cómo una tarea concreta entregará valor específico al cliente, que puede ser un usuario final o un miembro del equipo.</p>
+
+    <h2>Características de una Historia de Usuario</h2>
+    <p>Una historia de usuario consta de pocas frases en lenguaje claro que explican el resultado esperado. No se detalla técnicamente; esos aspectos se desarrollan en equipo al acordar los requisitos.</p>
+
+    <h2>Historias de Usuario, Épicas e Iniciativas</h2>
+    <p>Las historias de usuario forman la base de estructuras más grandes en metodologías ágiles, como las épicas e iniciativas. Una <strong>épica</strong> es un gran conjunto de trabajo, dividido en varias historias de usuario. Varias épicas pueden conformar una <strong>iniciativa</strong>, asegurando que el trabajo diario del equipo esté alineado con objetivos organizacionales a largo plazo.</p>
+
+    <h2>Plantilla de Historias de Usuario</h2>
+    <div class="highlight">
+        <p><strong>Formato:</strong> “Como [usuario], quiero [acción], para [objetivo o beneficio].”</p>
+        <p><strong>Ejemplos:</strong></p>
+        <ul>
+            <li>Como Paco, quiero invitar a mis amigos, para que podamos disfrutar de este servicio juntos.</li>
+            <li>Como Nicolas, quiero organizar mi trabajo, para tener un mayor control sobre mis tareas.</li>
+            <li>Como gestor, quiero ver el progreso de mis compañeros, para informar sobre nuestros avances y problemas.</li>
+        </ul>
+    </div>
+
+    <h2>¿Por qué son importantes las historias de usuario?</h2>
+    <p>Las historias de usuario son importantes porque ayudan al equipo a enfocarse en el usuario, fomentan la colaboración, simplifican el trabajo y motivan al equipo al conectar cada tarea con un beneficio claro para el usuario.</p>
+
+    <h2>Ventajas de las Historias de Usuario</h2>
+    <ul>
+        <li><strong>Centradas en el usuario:</strong> Mantienen al equipo enfocado en resolver problemas para usuarios reales.</li>
+        <li><strong>Colaboración:</strong> Facilitan discusiones sobre cómo cumplir mejor con las necesidades del usuario.</li>
+        <li><strong>Soluciones creativas:</strong> Fomentan el pensamiento crítico y creativo para alcanzar objetivos.</li>
+        <li><strong>Motivación:</strong> Cada historia es un pequeño reto y una pequeña victoria, motivando al equipo.</li>
+    </ul>
+
+    <h2>Proceso de Planificación de Historias de Usuario</h2>
+    <p>Durante la planificación de sprint, el equipo decide qué historias trabajará en ese sprint, discutiendo requisitos, funcionalidad y estimaciones de cada historia. Las historias deben ser lo suficientemente pequeñas para completarse dentro del sprint.</p>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Paso</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1. Decidir las Historias del Sprint</td>
+                <td>Durante la reunión de planificación, el equipo elige qué historias se trabajarán en el sprint. Aquí se discuten los requisitos y la funcionalidad de cada historia de usuario.</td>
+            </tr>
+            <tr>
+                <td>2. Definir Requisitos y Funcionalidad</td>
+                <td>El equipo discute cómo implementar cada historia de usuario de manera técnica y creativa, y los requisitos se añaden a la historia.</td>
+            </tr>
+            <tr>
+                <td>3. Estimar Complejidad o Tiempo</td>
+                <td>Se estima la complejidad o tiempo de cada historia usando métodos como tallas de camisetas, la secuencia de Fibonacci o el Planning Poker.</td>
+            </tr>
+            <tr>
+                <td>4. Ajustar el Tamaño de las Historias</td>
+                <td>Las historias deben ser lo suficientemente pequeñas para completarse dentro del sprint. Si alguna historia es demasiado grande, se divide en tareas más pequeñas y manejables.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Consejos para Escribir Historias de Usuario</h2>
+    <ul>
+        <li><strong>Definir “Listo”:</strong> Asegurarse de que la historia esté lista cuando el usuario pueda completar la tarea descrita.</li>
+        <li><strong>Describir Tareas o Subtareas:</strong> Especificar los pasos necesarios y los responsables de cada uno.</li>
+        <li><strong>Perfiles de Usuario:</strong> Crear varias historias para diferentes tipos de usuarios finales.</li>
+        <li><strong>Orden de Pasos:</strong> Escribir una historia para cada paso en un proceso mayor.</li>
+        <li><strong>Escuchar Feedback:</strong> Captar las necesidades del usuario mediante sus comentarios y evitar suposiciones.</li>
+        <li><strong>Tiempo:</strong> Las historias deben poder completarse en un sprint; si requieren mucho tiempo, divídelas en historias más pequeñas o considera una épica.</li>
+    </ul>
+</div>
+
 </body>
 </html>
