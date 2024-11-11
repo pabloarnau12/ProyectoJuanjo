@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docker y Diferencias con Máquinas Virtuales</title>
+    <!-- Enlace a Bootstrap para dar formato básico -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJX+F6A9P6nF7Fq4v7JcX0U8+6nq1FqOmgF0l5aGZlb9a8qY+GFfMKQUdPS4" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <header class="my-5">
+            <h1 class="display-4">Introducción a Docker y Máquinas Virtuales</h1>
+        </header>
+
+        <section>
+            <h2>¿Qué es Docker?</h2>
+            <p>Docker es una plataforma para poder construir, ejecutar y también desplegar aplicaciones. En otras palabras, si tu aplicación funciona en tu máquina, también va a funcionar en producción.</p>
+        </section>
+
+        <section>
+            <h2>Problemas comunes en desarrollo de software</h2>
+            <p>Si ya llevas tiempo trabajando en desarrollo de software, lo más probable es que te hayas topado con este meme, o incluso que tú ya lo hayas vivido en carne propia: que en tu máquina funciona, pero en el servidor no funciona. Y esto puede ocurrir por una de tres razones:</p>
+            <ul>
+                <li><strong>Falta uno o más archivos:</strong> La aplicación se encuentra incompleta en producción.</li>
+                <li><strong>Las configuraciones son distintas:</strong> Puede que un archivo de configuración o una variable de entorno sea diferente entre tu máquina local y producción.</li>
+                <li><strong>Discordancia en el software:</strong> Diferencias en las versiones del software entre tu máquina y el entorno de producción.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>La solución de Docker</h2>
+            <p>Con Docker se pueden generar paquetes de tus aplicaciones, y estos paquetes van a contener absolutamente todas las dependencias. Entonces, si tu aplicación para poder ejecutarse necesita Python 3.6, MySQL 8.0 y también el código de tu aplicación, todo esto se va a incluir dentro de un empaquetado. Lo maravilloso de Docker es que cualquier computador que tenga instalado Docker puede descargar tu aplicación desde la nube y ejecutarla con el comando <code>docker-compose up</code>. Otros desarrolladores podrán empezar a trabajar en tu aplicación sin necesidad de instalar las dependencias manualmente.</p>
+        </section>
+
+        <section>
+            <h2>Ambientes aislados con Docker</h2>
+            <p>Con Docker puedes tener más de una versión del mismo software dentro de tu máquina. Cada aplicación y sus dependencias se ejecutan en un ambiente completamente aislado, por lo que las distintas versiones no interfieren entre sí. Para eliminar una aplicación, solo debes eliminar el contenedor correspondiente sin afectar las demás aplicaciones o tu sistema operativo.</p>
+        </section>
+
+        <section>
+            <h2>Conclusión</h2>
+            <p>Docker permite mantener, ejecutar y desplegar aplicaciones de manera consistente, y por ello muchas empresas buscan desarrolladores que dominen esta herramienta. ¡Es una excelente decisión aprender Docker!</p>
+        </section>
+
+        <section>
+            <h2>Diferencias entre Docker y una Máquina Virtual</h2>
+            <p>Cuando se trata de la virtualización y contenedorización, Docker y las Máquinas Virtuales (VMs) son dos de las tecnologías más comunes. Aunque ambas permiten la ejecución de aplicaciones en entornos aislados, existen diferencias clave en cómo lo logran. A continuación, exploramos estas diferencias.</p>
+            <h3>1. ¿Qué es Docker?</h3>
+            <p>Docker es una plataforma de contenedorización que permite empaquetar aplicaciones y todas sus dependencias en contenedores ligeros. Estos contenedores se ejecutan sobre el sistema operativo anfitrión sin necesidad de un hipervisor, lo que hace que Docker sea más eficiente en términos de recursos.</p>
+            
+            <h3>2. ¿Qué es una Máquina Virtual?</h3>
+            <p>Una Máquina Virtual (VM) es una emulación completa de un sistema operativo que se ejecuta sobre un hipervisor. Cada VM incluye su propio sistema operativo completo, lo que implica un mayor consumo de recursos.</p>
+            
+            <h3>3. Diferencias clave entre Docker y una Máquina Virtual</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Docker</th>
+                        <th>Máquina Virtual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Arquitectura</td>
+                        <td>Docker utiliza el kernel del sistema operativo anfitrión y corre aplicaciones en contenedores ligeros.</td>
+                        <td>Cada VM incluye un sistema operativo completo que se ejecuta sobre un hipervisor.</td>
+                    </tr>
+                    <tr>
+                        <td>Uso de recursos</td>
+                        <td>Consume menos recursos, ya que no necesita virtualizar un sistema operativo completo.</td>
+                        <td>Consume más recursos porque virtualiza un sistema operativo completo, con su kernel.</td>
+                    </tr>
+                    <tr>
+                        <td>Arranque</td>
+                        <td>Docker arranca en segundos debido a su ligereza.</td>
+                        <td>Las máquinas virtuales tardan más en arrancar debido a que deben inicializar un sistema operativo completo.</td>
+                    </tr>
+                    <tr>
+                        <td>Aislamiento</td>
+                        <td>Aislamiento a nivel de proceso y sistema de archivos del anfitrión.</td>
+                        <td>Aislamiento completo, con su propio sistema operativo, red y almacenamiento virtualizados.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>4. Arquitectura de Docker</h3>
+            <p>Docker sigue un enfoque de arquitectura basado en contenedores que comparten el kernel del sistema operativo anfitrión. Esto significa que Docker no virtualiza el hardware ni necesita un sistema operativo completo en cada contenedor, como ocurre en una máquina virtual.</p>
+            
+            <h3>5. Imagen Docker vs. Máquina Virtual</h3>
+            <p>Las imágenes de Docker son plantillas ligeras que incluyen todo lo necesario para ejecutar una aplicación, desde el código hasta las bibliotecas y dependencias. Por otro lado, las máquinas virtuales requieren imágenes de disco que contienen un sistema operativo completo.</p>
+        </section>
+    </div>
+
+    <!-- Script de Bootstrap para interactividad (como modales, dropdowns, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0YfFZMSm5G9be0mj19Zs5AebU7TgS8nbcX+7uNKHEcbe5z6h" crossorigin="anonymous"></script>
+</body>
+</html>
